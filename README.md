@@ -2,7 +2,7 @@
 
 ## Introduction
 
-En français,  Modèle numérique de surface (MNS) et Modèle numérique de terrain(MNT).
+En français,  Modèle numérique de surface (*MNS*) et Modèle numérique de terrain (*MNT*).
 
 From *DSM*(Digital Surface Model) to *DTM*(Digital Terrain Model) is a  traditional topic, i.e. *DEM*(Digital Elevation Model) filtering. Among the traditional methods, the most famous method is using  progressive *TIN* (Triangular Irregular Network).
 
@@ -14,15 +14,27 @@ Because the input may be different, this will significantly influence the method
 
 ### Point cloud based
 
-Point cloud based usually  means LiDAR based, because LiDAR point cloud is accurate and with penetrability. On the other hand,  
+Point cloud based usually  means LiDAR based, because LiDAR point cloud is accurate and with penetrability. On the other hand,  the noise distribution of dense matching is different among methods, so DSM filter on dense matching based point cloud is rare. 
 
 Using deep learning, the DEM filtering  is converted into a classification problem, ground and non-ground point. 
 
+- [2D CNN based](https://www.mdpi.com/2072-4292/8/9/730)
 
+  convert point cloud into image, then use 2D CNN based classification.
 
+- [3D CNN based](https://arxiv.org/abs/2005.10745)
 
+  
 
-For 
+- 
+
+- 
+
+- 
+
+- 
+
+  
 
 ### DSM 
 
