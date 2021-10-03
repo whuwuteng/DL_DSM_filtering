@@ -26,9 +26,9 @@ Using deep learning, the DEM filtering  is converted into a classification probl
 
 - 3D CNN based
 
-  with the great sucess of [PointNet](https://openaccess.thecvf.com/content_cvpr_2017/papers/Qi_PointNet_Deep_Learning_CVPR_2017_paper.pdf), a lot of methods are proposed, for example, [PointNet++](https://arxiv.org/abs/1706.02413), [KPConv](https://openaccess.thecvf.com/content_ICCV_2019/papers/Thomas_KPConv_Flexible_and_Deformable_Convolution_for_Point_Clouds_ICCV_2019_paper.pdf), [RandLA-Net](https://openaccess.thecvf.com/content_CVPR_2020/papers/Hu_RandLA-Net_Efficient_Semantic_Segmentation_of_Large-Scale_Point_Clouds_CVPR_2020_paper.pdf) and so on.
+  with the great sucess of [PointNet](https://openaccess.thecvf.com/content_cvpr_2017/papers/Qi_PointNet_Deep_Learning_CVPR_2017_paper.pdf), a lot of methods are proposed, for example, [PointNet++](https://arxiv.org/abs/1706.02413), [KPConv](https://openaccess.thecvf.com/content_ICCV_2019/papers/Thomas_KPConv_Flexible_and_Deformable_Convolution_for_Point_Clouds_ICCV_2019_paper.pdf), [RandLA-Net](https://openaccess.thecvf.com/content_CVPR_2020/papers/Hu_RandLA-Net_Efficient_Semantic_Segmentation_of_Large-Scale_Point_Clouds_CVPR_2020_paper.pdf) and so on. These methods are proposed based on computer vision dataset.
 
-  [Nearest Neighbor Network](https://arxiv.org/abs/2005.10745) combine two works, i.e. [Full 3D CNN](https://www.sciencedirect.com/science/article/pii/S0924271618300832) and  [PointNet](https://openaccess.thecvf.com/content_cvpr_2017/papers/Qi_PointNet_Deep_Learning_CVPR_2017_paper.pdf).
+  From DSM to DTM, [Nearest Neighbor Network](https://arxiv.org/abs/2005.10745) combine two works, i.e. [Full 3D CNN](https://www.sciencedirect.com/science/article/pii/S0924271618300832) and  [PointNet](https://openaccess.thecvf.com/content_cvpr_2017/papers/Qi_PointNet_Deep_Learning_CVPR_2017_paper.pdf).
 
 - other work
 
@@ -37,15 +37,28 @@ Using deep learning, the DEM filtering  is converted into a classification probl
 
 ### DSM 
 
+- DNN
+  (1) [denoise problem](https://ieeexplore.ieee.org/document/8013741)
 
-
-
+  convert the problem from DSM to DTM to a denoise problem in 1D.
+  (2) [classifcation problme](https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/II-3-W4/103/2015/)
+  only classify the non-ground object in urban scenes.
 
 ### DSM+Image
 
+- DNN
 
+  [manul feature + FCN](https://www.sciencedirect.com/science/article/pii/S0924271618301643?casa_token=f0AKBx7DPNAAAAAA:-HQmTDB81ABV8pN81k4DHwfqVebwVPNyzVPi9RLiIpWaCmtyCoJfgeFXTMrsum1PrsSa_VuwdQ)
 
+  calculate several man made features and then use FCN to obtain the final classification result.
 
+### Other similar method
+
+- normalized Digital Surface Model (nDSM) based 
+
+  (1) [ResDepth](https://openaccess.thecvf.com/content_CVPRW_2020/papers/w11/Stucker_ResDepth_Learned_Residual_Stereo_Reconstruction_CVPRW_2020_paper.pdf)
+
+  combine image and residual  DSM to improve the DSM result.
 
 ## Dataset
 
