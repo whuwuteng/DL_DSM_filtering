@@ -4,8 +4,6 @@
 
 En français,  Modèle numérique de surface (*MNS*) et Modèle numérique de terrain (*MNT*).
 
-In AI4GEO project, I need to investigate this topic, so 
-
 From *DSM*(Digital Surface Model) to *DTM*(Digital Terrain Model) is a  traditional topic, i.e. *DEM*(Digital Elevation Model) filtering. Among the traditional methods, the most famous method is using  progressive *TIN* (Triangular Irregular Network).
 
 With the development of deep learning,  many methods and dataset are published, in this document, the methods and dataset is listed.
