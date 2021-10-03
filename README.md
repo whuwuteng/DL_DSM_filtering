@@ -34,6 +34,10 @@ Using deep learning, the DEM filtering  is converted into a classification probl
 
   (1) [two-level fusion network](https://www.sciencedirect.com/science/article/abs/pii/S0924271618300765?via%3Dihub)
   first use scene detection and then use deep learning to do point based classification using the scene recognition.
+  
+  (2) [geometry-attentional network](https://www.sciencedirect.com/science/article/pii/S0924271620300861?casa_token=PRgZdsMwLW8AAAAA:5jIWedRQC6LBGG3pvevHSe3umlP4-touTLTzJGqWWTnxMoGjYdqJlf42UPCr8tAAHadpaV43lA)
+  
+  use the attention in 3D network.
 
 ### DSM 
 
@@ -45,12 +49,18 @@ Using deep learning, the DEM filtering  is converted into a classification probl
   
   (2) [classifcation problme](https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/II-3-W4/103/2015/)
   only classify the non-ground object in urban scenes.
+  
+- 2D CNN
+
+  (1)  [Encoder-decoder](https://ris.utwente.nl/ws/portalfiles/portal/151373756/isprs_annals_IV_2_231_2018.pdf)
+
+  use evevation, internsity, return number and height different as input, and the out put is the label(ground or non-ground).
 
 ### DSM+Image
 
 - DNN
 
-  [manul feature + FCN](https://www.sciencedirect.com/science/article/pii/S0924271618301643?casa_token=f0AKBx7DPNAAAAAA:-HQmTDB81ABV8pN81k4DHwfqVebwVPNyzVPi9RLiIpWaCmtyCoJfgeFXTMrsum1PrsSa_VuwdQ)
+  (1) [manul feature + FCN](https://www.sciencedirect.com/science/article/pii/S0924271618301643?casa_token=f0AKBx7DPNAAAAAA:-HQmTDB81ABV8pN81k4DHwfqVebwVPNyzVPi9RLiIpWaCmtyCoJfgeFXTMrsum1PrsSa_VuwdQ)
 
   calculate several man made features and then use FCN to obtain the final classification result.
 
