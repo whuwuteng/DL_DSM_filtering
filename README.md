@@ -38,9 +38,11 @@ Using deep learning, the DEM filtering  is converted into a classification probl
 ### DSM 
 
 - DNN
+  
   (1) [denoise problem](https://ieeexplore.ieee.org/document/8013741)
-
+  
   convert the problem from DSM to DTM to a denoise problem in 1D.
+  
   (2) [classifcation problme](https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/II-3-W4/103/2015/)
   only classify the non-ground object in urban scenes.
 
