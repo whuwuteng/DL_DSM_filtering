@@ -18,24 +18,22 @@ Because the input may be different, this will significantly influence the method
 
 Point cloud based usually  means LiDAR based, because LiDAR point cloud is accurate and with penetrability. On the other hand,  the noise distribution of dense matching is different among methods, so DSM filter on dense matching based point cloud is rare. 
 
-Using deep learning, the DEM filtering  is converted into a classification problem, ground and non-ground point. 
+Using deep learning, the DEM filtering  is converted into a classification problem, ground and non-ground point. Actualy, this method is not a direct method, after classification, the DTM is generated from TIN using the ground points.
 
 - [2D CNN based](https://www.mdpi.com/2072-4292/8/9/730)
 
   convert point cloud into image, then use 2D CNN based classification.
 
-  
+- 3D CNN based
 
-- [3D CNN based](https://arxiv.org/abs/2005.10745)
+  with the great sucess of [PointNet](https://openaccess.thecvf.com/content_cvpr_2017/papers/Qi_PointNet_Deep_Learning_CVPR_2017_paper.pdf), a lot of methods are proposed, for example, [PointNet++](https://arxiv.org/abs/1706.02413), [KPConv](https://openaccess.thecvf.com/content_ICCV_2019/papers/Thomas_KPConv_Flexible_and_Deformable_Convolution_for_Point_Clouds_ICCV_2019_paper.pdf), [RandLA-Net](https://openaccess.thecvf.com/content_CVPR_2020/papers/Hu_RandLA-Net_Efficient_Semantic_Segmentation_of_Large-Scale_Point_Clouds_CVPR_2020_paper.pdf) and so on.
 
-  
+  [Nearest Neighbor Network](https://arxiv.org/abs/2005.10745) combine two works, i.e. [Full 3D CNN](https://www.sciencedirect.com/science/article/pii/S0924271618300832) and  [PointNet](https://openaccess.thecvf.com/content_cvpr_2017/papers/Qi_PointNet_Deep_Learning_CVPR_2017_paper.pdf).
 
 - other work
 
   (1) [two-level fusion network](https://www.sciencedirect.com/science/article/abs/pii/S0924271618300765?via%3Dihub)
-  first use scene detection and then use deep learning to do point based classification
-
-  
+  first use scene detection and then use deep learning to do point based classification using the scene recognition.
 
 ### DSM 
 
