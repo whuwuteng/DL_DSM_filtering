@@ -4,6 +4,8 @@
 
 En français,  Modèle numérique de surface (*MNS*) et Modèle numérique de terrain (*MNT*).
 
+In AI4GEO project, I need to investigate this topic, so 
+
 From *DSM*(Digital Surface Model) to *DTM*(Digital Terrain Model) is a  traditional topic, i.e. *DEM*(Digital Elevation Model) filtering. Among the traditional methods, the most famous method is using  progressive *TIN* (Triangular Irregular Network).
 
 With the development of deep learning,  many methods and dataset are published, in this document, the methods and dataset is listed.
@@ -22,17 +24,16 @@ Using deep learning, the DEM filtering  is converted into a classification probl
 
   convert point cloud into image, then use 2D CNN based classification.
 
+  
+
 - [3D CNN based](https://arxiv.org/abs/2005.10745)
 
   
 
-- 
+- other work
 
-- 
-
-- 
-
-- 
+  (1) [two-level fusion network](https://www.sciencedirect.com/science/article/abs/pii/S0924271618300765?via%3Dihub)
+  first use scene detection and then use deep learning to do point based classification
 
   
 
@@ -53,6 +54,10 @@ Using deep learning, the DEM filtering  is converted into a classification probl
 ### AHN dataset
 
 For the AHN2 the ground and non-ground are saved in two files, can be found [here](https://esrinl-content.maps.arcgis.com/apps/Embed/index.html?appid=a0fac0a69f5343a3bbd15f5605dee4cc).
+
+### [OpenGF](https://github.com/Nathan-UW/OpenGF)
+
+This dataset is from open LiDAR dataset. 
 
 ### Other 
 
